@@ -25,7 +25,7 @@ jobs:
             git config --global user.name 'ixio0330'
             git config --global user.email 'ixio0330@gmail.com'
             git add .
-            git commit -m "💄 Update Styles"
+            git commit -m '💄 Update Styles'
             git push
         env: 
             GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
