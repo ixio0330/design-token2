@@ -17,6 +17,8 @@ jobs:
           node-version: 16
       - name: Commit files
         run: |
+            echo "Current user: $GITHUB_ACTOR"
+            echo "Current user email: $GITHUB_ACTOR_EMAIL"
             npm install
             npm install -g token-transformer
             npm run tt:global
