@@ -18,8 +18,10 @@ jobs:
       - name: Get email
         id: get-email
         run: |
-          EMAIL=$(gh api /user/emails --paginate --jq '[.[] | select(.primary == true) | .email][0]')
-          echo "::set-output name=email::$EMAIL"
+            EMAIL=$(gh api /user/emails --paginate --jq '[.[] | select(.primary == true) | .email][0]')
+            echo "::set-output name=email::$EMAIL"
+        env: 
+            GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       - name: Commit files
         run: |
             echo "Current user: $GITHUB_ACTOR"
