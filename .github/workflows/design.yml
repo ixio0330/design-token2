@@ -15,10 +15,15 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
+      - name: Get email
+        id: get-email
+        run: |
+          EMAIL=$(gh api /user/emails --paginate --jq '[.[] | select(.primary == true) | .email][0]')
+          echo "::set-output name=email::$EMAIL"
       - name: Commit files
         run: |
             echo "Current user: $GITHUB_ACTOR"
-            echo "Current user email: $GITHUB_ACTOR_EMAIL"
+            echo "Current user email: ${{ steps.get-email.outputs.email }}"
             npm install
             npm install -g token-transformer
             npm run tt:global
