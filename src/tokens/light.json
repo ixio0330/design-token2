@@ -1,60 +1,50 @@
 {
   "fg": {
     "default": {
-      "value": "{colors.black}",
-      "type": "color",
-      "failedToResolve": true
+      "value": "#000000",
+      "type": "color"
     },
     "muted": {
-      "value": "{colors.gray.700}",
-      "type": "color",
-      "failedToResolve": true
+      "value": "#4a5568",
+      "type": "color"
     },
     "subtle": {
-      "value": "{colors.gray.500}",
-      "type": "color",
-      "failedToResolve": true
+      "value": "#a0aec0",
+      "type": "color"
     }
   },
   "bg": {
     "default": {
-      "value": "{colors.white}",
-      "type": "color",
-      "failedToResolve": true
+      "value": "#ffffff",
+      "type": "color"
     },
     "muted": {
-      "value": "{colors.gray.100}",
-      "type": "color",
-      "failedToResolve": true
+      "value": "#f7fafc",
+      "type": "color"
     },
     "subtle": {
-      "value": "{colors.gray.200}",
-      "type": "color",
-      "failedToResolve": true
+      "value": "#edf2f7",
+      "type": "color"
     }
   },
   "accent": {
     "default": {
-      "value": "{colors.indigo.400}",
-      "type": "color",
-      "failedToResolve": true
+      "value": "#7f9cf5",
+      "type": "color"
     },
     "onAccent": {
-      "value": "{colors.white}",
-      "type": "color",
-      "failedToResolve": true
+      "value": "#ffffff",
+      "type": "color"
     },
     "bg": {
-      "value": "{colors.indigo.200}",
-      "type": "color",
-      "failedToResolve": true
+      "value": "#c3dafe",
+      "type": "color"
     }
   },
   "shadows": {
     "default": {
-      "value": "{colors.gray.900}",
-      "type": "color",
-      "failedToResolve": true
+      "value": "#1a202c",
+      "type": "color"
     }
   }
 }
